@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dudh Dairy - Premium Organic Dairy Products Delivered Fresh Daily">
+    <meta name="keywords" content="Organic Dairy, Farm-Fresh Milk, Artisan Cheese, Premium Butter, Traditional Lassi, Home Delivery">
+    <meta name="author" content="Dudh Dairy">
+    <title>Dudh Dairy | Fresh & Organic Dairy Delivered</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">Dudh Dairy</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">Our Story</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="contact.html" class="btn-secondary">Contact</a></li>
+        </ul>
+        <div class="mobile-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Pure Nutrition,<br>Farm-to-Table Freshness</h1>
+            <p class="subtitle">Ethically sourced organic dairy products delivered to your doorstep within 12 hours of production</p>
+            <div class="hero-cta">
+                <a href="#products" class="btn-primary">Explore Products</a>
+                <a href="tel:+918001234567" class="btn-secondary">Order by Phone</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Propositions -->
+    <section class="features">
+        <div class="feature">
+            <h3>Organic Certification</h3>
+            <p>USDA and FSSAI certified organic products from pasture-raised cows</p>
+        </div>
+        <div class="feature">
+            <h3>Sustainable Practices</h3>
+            <p>Eco-friendly packaging and carbon-neutral delivery options available</p>
+        </div>
+        <div class="feature">
+            <h3>Quality Assurance</h3>
+            <p>Stringent 7-step quality check process for every batch produced</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-content">
+            <h2>Our Commitment to Excellence</h2>
+            <p>For over 15 years, Dudh Dairy has been pioneering organic dairy production in India. Our journey began with a simple philosophy: <em>"Nature's goodness, delivered fresh"</em>. Today, we serve over 50,000 happy customers monthly with:</p>
+            <ul class="benefits">
+                <li>Products made from A2 cow milk</li>
+                <li>Zero additives or preservatives</li>
+                <li>Support for local dairy farmers</li>
+                <li>24-hour farm-to-doorstep delivery</li>
+            </ul>
+            <a href="about.html" class="btn-tertiary">Learn More About Us</a>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <h2>Our Premium Dairy Products</h2>
+        <div class="product-gallery">
+            
+            <!-- Fresh Milk -->
+            <div class="product-card">
+                <div class="card-header">
+                    <img src="glass-of-milk-pouring-87984584-593d45d33df78c537b632490.jpg" alt="Fresh Milk">
+                </div>
+                <div class="card-body">
+                    <h3>Fresh Milk</h3>
+                    <p>Pure and organic milk from healthy cows — perfect for a nutritious day.</p>
+                    <div class="price">₹74 / Litre</div>
+                    <button onclick="placeOrder('Fresh Milk', 74)">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Creamy Butter -->
+            <div class="product-card">
+                <div class="card-header">
+                    <img src="butter.jpeg" alt="Creamy Butter">
+                </div>
+                <div class="card-body">
+                    <h3>Creamy Butter</h3>
+                    <p>Homemade, rich, and creamy butter made from fresh milk.</p>
+                    <div class="price">₹400 / Kg</div>
+                    <button onclick="placeOrder('Creamy Butter', 400)">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Organic Cheese -->
+            <div class="product-card">
+                <div class="card-header">
+                    <img src="white-chease.webp" alt="Organic Cheese">
+                </div>
+                <div class="card-body">
+                    <h3>Organic Cheese</h3>
+                    <p>Soft, healthy, and traditionally crafted organic cheese.</p>
+                    <div class="price">₹600 / Kg</div>
+                    <button onclick="placeOrder('Organic Cheese', 600)">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Ice Cream -->
+            <div class="product-card">
+                <div class="card-header">
+                    <img src="ice.jpg" alt="Ice Cream">
+                </div>
+                <div class="card-body">
+                    <h3>Ice Cream</h3>
+                    <p>Creamy and delicious ice cream made with love and pure ingredients.</p>
+                    <div class="price">₹70 / Scoop</div>
+                    <button onclick="placeOrder('Ice Cream', 70)">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Lassi -->
+            <div class="product-card">
+                <div class="card-header">
+                    <img src="lassi.jpg" alt="Lassi">
+                </div>
+                <div class="card-body">
+                    <h3>Refreshing Lassi</h3>
+                    <p>Cool, refreshing, and perfectly sweet — traditional Indian lassi.</p>
+                    <div class="price">₹80 / Glass</div>
+                    <button onclick="placeOrder('Lassi', 80)">Add to Cart</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>Dudh Dairy Pvt Ltd<br>Organic Valley, Maharashtra<br>Phone: +91 800 123 4567<br>Email: care@dudhdairy.com</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Subscription Plans</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Subscribe</h4>
+                <form class="newsletter">
+                    <input type="email" placeholder="Your email address">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Dudh Dairy | All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

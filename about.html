@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Dudh Dairy</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans&display=swap');
+
+        :root {
+            --primary: #2B4C3F;
+            --secondary: #6C8E7E;
+            --light: #FFFFFF;
+            --gray: #F5F5F5;
+            --dark: #2D2D2D;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background: var(--light);
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 2rem;
+            background: var(--light);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-family: 'Merriweather', serif;
+            font-size: 1.75rem;
+            color: var(--primary);
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: var(--dark);
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .mobile-menu {
+            display: none;
+            flex-direction: column;
+            gap: 4px;
+            cursor: pointer;
+        }
+
+        .mobile-menu span {
+            width: 24px;
+            height: 3px;
+            background: var(--dark);
+        }
+
+        .hero {
+            background: url('./cow.jpg') no-repeat center;
+            background-size: cover;
+            height: 400px;
+            position: relative;
+        }
+
+        .hero-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+        }
+
+        .about-section {
+            padding: 4rem 2rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .about-image {
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .about-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .mission-values {
+            background: var(--gray);
+            padding: 4rem 2rem;
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .value-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        footer {
+            background: var(--primary);
+            color: var(--light);
+            padding: 4rem 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .mobile-menu {
+                display: flex;
+            }
+            
+            .about-section {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">Dudh Dairy</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#story">Our Story</a></li>
+            <li><a href="#mission">Our Mission</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="mobile-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>About Us</h1>
+            <p>Discover Our Journey from Farm to Table</p>
+        </div>
+    </section>
+
+    <!-- Our Story -->
+    <section class="about-section" id="story">
+        <div class="about-text">
+            <h2>Our Story</h2>
+            <p>Founded in 2010, Dudh Dairy started as a small family-run dairy farm in Maharashtra. What began with 50 cows and a passion for quality milk has grown into a trusted organic dairy brand serving over 50,000 customers monthly.</p>
+            <p>We maintain our commitment to:</p>
+            <ul>
+                <li>Ethical animal husbandry practices</li>
+                <li>Sustainable farming methods</li>
+                <li>Supporting local agricultural communities</li>
+                <li>Delivering farm-fresh products</li>
+            </ul>
+        </div>
+        <div class="about-image">
+            <img src="./sujit.avif" alt="Dairy Farm">
+        </div>
+    </section>
+
+    <!-- Mission & Values -->
+    <section class="mission-values" id="mission">
+        <h2>Our Mission & Values</h2>
+        <div class="values-grid">
+            <div class="value-card">
+                <h3>Quality First</h3>
+                <p>7-step quality check process for every batch</p>
+            </div>
+            <div class="value-card">
+                <h3>Sustainability</h3>
+                <p>Carbon-neutral delivery and eco-friendly packaging</p>
+            </div>
+            <div class="value-card">
+                <h3>Community Support</h3>
+                <p>Partnering with 200+ local dairy farmers</p>
+            </div>
+            <div class="value-card">
+                <h3>Innovation</h3>
+                <p>Continuous improvement in dairy processing techniques</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>Dudh Dairy Pvt Ltd<br>Organic Valley, Maharashtra<br>Phone: +91 800 123 4567<br>Email: care@dudhdairy.com</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Subscription Plans</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Dudh Dairy | All Rights Reserved</p>
+        </div>
+    </footer>
+</body>
+</html>
